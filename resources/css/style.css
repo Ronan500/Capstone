@@ -3,11 +3,14 @@
 html {
   font-family: sans-serif;
   font-size: 16px;
+  margin: 0 auto;
+
  }
 
 .banner {
   margin-top: 4rem;
   background-color: lightgrey;
+
 }
 
 /* .....header position and styles for desktop....*/
@@ -35,7 +38,7 @@ header .content .logo {
 }
 
 header  span {
-   flex: 1;
+   flex:1 ;
    color: grey;
    vertical-align: middle;
 }
@@ -68,10 +71,15 @@ header .mobile {
 
 /*..........header position and styles for mobile..............*/
 
+@media only screen and (min-width: 480px) {
 @media only screen and (max-width: 760px) {
 
 header .desktop,.logo,span {
   display: none;
+}
+.banner{
+  margin-top: 0rem;
+  padding-top: 4rem;
 }
 
 header .mobile {
@@ -106,7 +114,7 @@ header .mobile {
   margin: 0rem;
   }
 }
-
+}
 /*....................mainContent......................................*/
 
 @media only screen and (min-width: 760px) {
@@ -114,18 +122,44 @@ header .mobile {
 .banner {
   display: inline-flex;
   width: 100%;
-  height: 39rem;
-}
+  height: 45rem;
 
+}
+.girlsContainer{    /*.....checking.....*/
+  width: 60%;
+
+
+}
+/*...
+.girlsContainer .girls .pic{ /*............this.....*/
+  display: block;
+/*  overflow-x: hidden; ..*/
+/*  width: auto;...*/
+}
 .girls {
+  width: auto;
+  height: 95.5%;
+
+  margin-right: 1.5rem;
+  margin-left: 1.5rem;
+  margin-bottom: 2rem;
+
+ background-image: url("../images/bookGirls.jpg");
+ background-size: cover;
+ background-position: center;
+ background-repeat: no-repeat;
+}
+/*.girls {
   display: flex;
   background-image: url("..image/bookGirls.jpg");
   background-size: cover;
   margin: 1.5rem 1rem 1.5rem 1.5rem;
 
-}
+}  .....*/
 .girls img {
   width: 100%;
+  height: 100%;
+
 }
 
 
@@ -133,11 +167,15 @@ header .mobile {
   display: flex;
   flex-direction: column;
   align-items: flex-start;
-  margin: 1.5rem 1.5rem 1.5rem 1rem;
+  margin: 1.5rem 0rem 1.5rem 0rem;
 }
 
 .banner .words {
   width: 40%;
+}
+.words {
+  width: 40%;
+/*.  overflow-x: hidden; /*....checking...*/
 }
 
 .words h1 {
@@ -161,8 +199,8 @@ header .mobile {
 .banner a  {
   font-size: 1.3rem;
   text-align: center;
-  border: 1px solid black;
-  background-color: black;
+  border: 1px solid grey;
+  background-color: grey;
   padding: 1rem 8rem 1rem 8rem;
   margin-left: 1rem;
   text-decoration: none;
@@ -176,69 +214,214 @@ header .mobile {
 
 }
 
-/*............main Content mobile...................................*/
+
+/*..................Uppermid section  desktop version.....................*/
 
 
-@media only screen and (max-width: 760px) {
-
-.girls img {
-  width: 100%;
-}
-
-.banner {
+.UppermidContainer {
   display: flex;
-  position: absolute;
-  flex-direction: column;
-}
-
-.girls{
   width: 100%;
+  height: 42rem;
+
 }
 
-.banner h1, {
-  text-align: left;
-  white-space: nowrap;
+.Uppermiddesktop {
+    display: flex;
+    width: 60%;
+    height: 42rem;
+    flex-direction: column;
+    float: left;
+    padding-bottom: 2rem;
 }
 
-.words h1 {
-  width: 100%;
-  font-size: 3rem;
-  font-weight: bold;
-  padding: 1.5rem 0rem 1.5rem 1rem;
-  white-space: nowrap;
+.trouble{
+  max-width: 100%;
+  height: 25rem;
+  margin: 2rem 1.5rem 2rem 1.5rem;
+  background-image: url("../images/studyGuy.jpg");
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+                                 /*...trouble...*/
+.troubleimage{
+  max-width: 100%;
+  max-height: 100%;
 }
 
-.banner .span {
-  display: flex;
+
+.Uppermidside {
+    display: flex;
+    width: 39.9%;
+    height: 39rem;
+    flex-direction: column;
+    float: right;
+    padding-top: 1rem;
+    border-left: 1px solid lightgrey;
+    padding-bottom: 4rem;
+}
+
+ .container {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    padding: 1rem 0rem 1rem 0rem;
+    border-bottom: 1px solid lightgrey;
+}
+
+.container:last-child  {
+  background-color: lightgrey;
+}
+
+.img {
+  width: 35%;
+  height: auto;
+  padding-left: 1rem;
+}
+
+.clsimg{
+  max-width: 100%;
+  max-height: 100%;
+}
+
+.writting{
+  width: 65%;
+  height: auto;
+  padding-left: 1rem;
+}
+.writting h3{
   font-size: 1.5rem;
-  padding: 0rem  0rem 1.5rem 1rem;
-  margin-bottom: 1.5rem;
+  font-weight: bolder;
+  padding-top: 2rem;
+  padding-bottom: 0.5rem;
 }
-
-.words a {
-  display: flex;
-  max-width: 30%;
-  margin-right: 4%;
-  white-space: nowrap;
+.writting p{
+  padding-top: 0.5rem;
+  padding-bottom: 0.5rem;
 }
-
-.words a{
-  position: inherit;
-  font-size: 1.3rem;
-  text-align: center;
-  border: 1px solid black;
-  background-color: black;
-  padding: 1rem 8rem 1rem 8rem;
+.writting a{
+  padding-top: 1rem;
   text-decoration: none;
-  color: white;
-  margin-left: 1rem;
-  white-space: nowrap;
 }
 
-.words a:hover {
-  background-color: red;
+ .text{
+   max-width: 100%;
+   padding-left: 1.5rem;
+   padding-right: 2rem;
+
  }
+ .text h2{
+   font-size: 2.5rem;
+   font-weight: bolder;
+   padding-bottom: 1.5rem;
+ }
+ .text p{
+   font-size: 1.1rem;
+}
+.text h4{
+  font-size: 1.1rem;
+  padding-top: 1.5rem;
+  padding-bottom: 2rem;
+}
+/*.............................learning................*/
+
+.learning{
+  display: block;
+  width: 100%;
+  height: 49rem;
+  padding-top: 0rem;
+  margin-top: 44rem;
 
 }
 
-/*..............................next part.....................*/
+.color{
+  width: 100%;
+  background-color: lightgrey;
+}
+.color h1{
+  text-align: center;
+  font-size: 3rem;
+  font-weight: bolder;
+  padding-top: 2rem;
+  padding-bottom: 2rem;
+
+}
+.learnbox{
+  display: flex;
+  flex-direction: column;
+  padding: 5px;
+  width: 22rem;
+  height: 28rem;
+
+}
+.image1{
+  height: 50%;
+  background-image: url("../images/desktops.jpg");
+  background-size: contain;
+  background-position: center;
+  background-repeat: no-repeat;
+  margin-bottom: -0.5rem;
+}
+.image2{
+  height: 50%;
+  background-image: url("../images/mobile.jpg");
+  background-size: contain;
+  background-position: center;
+  background-repeat: no-repeat;
+  margin-bottom: -0.5rem;
+}
+.image3{
+  height: 50%;
+  background-image: url("../images/vintageCamera.jpg");
+  background-size: contain;
+  background-position: center;
+  background-repeat: no-repeat;
+  margin-bottom: -0.5rem;
+}
+.image4{
+  height: 50%;
+  background-image: url("../images/laptop.jpg");
+  background-size: contain;
+  background-position: center;
+  background-repeat: no-repeat;
+  margin-bottom: -0.5rem;
+}
+.image5{
+  height: 50%;
+  background-image: url("../images/chess.jpg");
+  background-size: contain;
+  background-position: center;
+  background-repeat: no-repeat;
+  margin-bottom: -0.5rem;
+}
+.image6{
+  height: 50%;
+  background-image: url("../images/appleWatch.jpg");
+  background-size: contain;
+  background-position: center;
+  background-repeat: no-repeat;
+  margin-bottom: -0.5rem;
+}
+.image {
+
+  height: 50%;
+  width: auto;
+}
+.learnimage{
+  max-height: 100%;
+  max-width: 100%;
+}
+.para {
+
+  height: 50%;
+  width: auto;
+  background-color: white;
+  margin-top: -1rem;
+}
+.learnContainer {
+  display: inline-flex;
+  padding-left: 4.5rem;
+  padding-right: 4.5rem;
+  flex-wrap: wrap;
+  justify-content: center;
+}
