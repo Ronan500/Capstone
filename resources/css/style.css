@@ -6,9 +6,9 @@ html {
 *, *:before, *:after {
   box-sizing: inherit;
 }
-@media only screen and (max-width: 460px){
+@media only screen and (max-width: 540px){
   html{
-
+   
   }
 }
 
@@ -99,7 +99,7 @@ header .mobile {
 /*..........header position and styles for mobile..............*/
 
 
-@media only screen and (max-width: 460px){
+@media only screen and (max-width: 540px){
   header {
     position: fixed;
     z-index: 1;
@@ -278,7 +278,7 @@ header .mobile {
 
  /*...mobile ..........*/
 
-@media only screen and (max-width: 480px){
+@media only screen and (max-width: 540px){
   .banner {
     display: none;
   }
@@ -579,7 +579,7 @@ header .mobile {
 } /*....media tag ........*/ /*...very important...*/
 
 
-@media only screen and (min-width: 760px){
+@media only screen and (min-width: 960px){
   .UppermidMobile img{
     display: none;
   }
