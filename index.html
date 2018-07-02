@@ -40,7 +40,7 @@
       <div class="banner">
         <div class="girlsContainer">
           <div class="girls">
-            <img src="./resources/images/bookGirls.jpg" width="60%" height="auto">
+            <img src="./resources/images/bookGirls.jpg" class="desk" width="100%" height="auto">
           </div>
         </div>
         <div class="words">
@@ -51,7 +51,22 @@
         </div>
      </div>
 
+     <!--banner mobile-->
+
+     <div class="bannermobile">
+        <div  class="imgmobile">
+          <img src="./resources/images/bookGirls.jpg" class="mob" alt="bookGirls">
+        </div>
+        <div class="mobilewords">
+          <h1 class="mobH1">Learn something</br>new everyday</h1>
+          <p class="mobP">Lorem ipsum dolor sit amet,</br>
+             consectetur adipiscing elit.</p>
+          <span class="mobSpan"><a href="#">Start here</a></span>
+        </div>
+      </div>
+
      <!--Upper mid section-->
+
      <div class="UppermidContainer">
        <div class="Uppermiddesktop">
         <div class="trouble">
@@ -103,39 +118,71 @@
      </div>
    </div>
 
-  <!--  <div class="UppermidMobile">
+  <!--Uppermid mobile section-->
+
+   <div class="UppermidMobile">
      <div class="mobileContainer">
-       <div class="img">
+       <div class="imgmob">
          <img src="./resources/images/brickRoadMobile.jpg" alt="brick road">
        </div>
        <div class="info">
-         <h3>Orientation</h3>
-         <p>Tue 10/11 &amp; Wed 10/12: 8am-3pm</p>
-         <p><a>Read more</a></p>
+         <h3 class="mobileH3">Orientation</h3>
+         <p class="mobileP">Tue 10/11 &amp; Wed 10/12: 8am-3pm</p>
+         <p><a class="at" href="#">Read more</a></p>
        </div>
      </div>
      <div class="mobileContainer">
-       <div class="img">
+       <div class="imgmob">
          <img src="./resources/images/map-mobile.jpg" alt="map">
        </div>
        <div class="info">
-         <h3>Our campus</h3>
+         <h3 class="mobileH3">Our campus</h3>
          <p>Find which campus is close by you</p>
-         <p><a>Read more</a></p>
+         <p><a class="at" href="#">Read more</a></p>
        </div>
      </div>
      <div class="mobileContainer">
-       <div class="img">
+       <div class="imgmob">
          <img src="./resources/images/oldGuyMobile.jpg" alt="map">
        </div>
        <div class="info">
-         <h3>Special guest lecture</h3>
+         <h3 class="mobileH3">Special guest lecture</h3>
          <p>Join a keynote with Oliver Sack about</br>
             music in medical treatment</p>
-         <p><a>Read more</a></p>
+         <p><a class="at" href="#">Read more</a></p>
        </div>
      </div>
-   </div>  -->
+   </div>
+
+  <!--Lowermid mobile section-->
+
+  <div class="Lowermid">
+      <h1>Start learning</h1>
+      <div id="start" class="buttons">
+        <ul>
+
+          <li><button onclick="window.location.href='#'">Software engineering</button></li>
+          <li><button onclick="window.location.href='#'">Computer art</button></li>
+          <li><button onclick="window.location.href='#'">Design</button></li>
+          <li><button onclick="window.location.href='#'">Data</button></li>
+          <li><button onclick="window.location.href='#'">Business</button></li>
+          <li><button onclick="window.location.href='#'">Marketing</button></li>
+        </ul>
+     </div>
+    <div class="thesis">
+      <h1>Thesis exhibits</h1>
+    </div>
+    <div id="flick"class="film">
+      <video width="97%" height="auto" controls>
+          <source src="./resources/video/thesis.mp4" type="video/mp4">
+        </video>
+    </div>
+    <div class="rights">
+      <p>&copy; 2016 Colmar Academy, All rights reserved.</p>
+    </div>
+  </div>
+
+  <!--Learning desktop version-->
 
   <div class="learning">
      <div class="color">
@@ -155,7 +202,7 @@
        <div class="learnbox">
          <div class="image2">
         <!--   <img src="./resources/images/mobile.jpg" class="learnimage" alt="desktops">  -->
-         </div>
+        </div>
          <div class="para">
          <h3>Computer art</h3>
          <h4>COURSES</h4>
@@ -167,7 +214,7 @@
        <div class="learnbox">
          <div class="image3">
         <!--   <img src="./resources/images/vintageCamera.jpg" class="learnimage" alt="desktops"> -->
-         </div>
+        </div>
          <div class="para">
          <h3>Design</h3>
          <h4>COURSES</h4>
@@ -189,7 +236,7 @@
        <div class="learnbox">
          <div class="image5">
           <!-- <img src="./resources/images/chess.jpg" class="learnimage" alt="desktops"> -->
-        </div>
+       </div>
         <div class="para">
          <h3>Business</h3>
          <h4>COURSES</h4>
@@ -200,7 +247,7 @@
        <div class="learnbox">
          <div class="image6">
           <!-- <img src="./resources/images/appleWatch.jpg" class="learnimage" alt="desktops"> -->
-        </div>
+       </div>
         <div class="para">
          <h3>Marketing</h3>
          <h4>COURSES</h4>
@@ -265,7 +312,6 @@
   </div>
 
  </div>
-
 
   </body>
 </html>
