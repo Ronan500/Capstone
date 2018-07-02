@@ -6,9 +6,9 @@ html {
 *, *:before, *:after {
   box-sizing: inherit;
 }
-@media only screen and (max-width: 370px){
+@media only screen and (max-width: 460px){
   html{
-
+  /*  overflow-x: hidden; ...*/
   }
 }
 
@@ -99,7 +99,7 @@ header .mobile {
 /*..........header position and styles for mobile..............*/
 
 
-@media only screen and (max-width: 370px){
+@media only screen and (max-width: 460px){
   header {
     position: fixed;
     z-index: 1;
@@ -278,7 +278,7 @@ header .mobile {
 
  /*...mobile ..........*/
 
-@media only screen and (max-width: 370px){
+@media only screen and (max-width: 460px){
   .banner {
     display: none;
   }
