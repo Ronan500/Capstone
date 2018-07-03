@@ -2,6 +2,7 @@
 /*..................Universal styles.................*/
 html {
   box-sizing: border-box;
+
 }
 *, *:before, *:after {
   box-sizing: inherit;
@@ -742,8 +743,10 @@ header .mobile {
   display: inline-flex;
   padding-left: 4.5rem;
   padding-right: 4.5rem;
-  flex-wrap: wrap;
+  flex-wrap: wrap;  /*..testing...*/
   justify-content: center;
+  overflow: hidden;  /*..testing...*/
+
 }
 .learnbox{
   display: flex;
@@ -761,7 +764,7 @@ header .mobile {
   background-size: contain;
   background-position: center;
   background-repeat: no-repeat;
-  margin-bottom: -0.5rem;
+  margin-bottom: -1rem;
 }
 .image2{
   height: 50%;
@@ -769,7 +772,7 @@ header .mobile {
   background-size: contain;
   background-position: center;
   background-repeat: no-repeat;
-  margin-bottom: -0.5rem;
+  margin-bottom: -1rem;
 }
 .image3{
   height: 50%;
@@ -777,7 +780,7 @@ header .mobile {
   background-size: contain;
   background-position: center;
   background-repeat: no-repeat;
-  margin-bottom: -0.5rem;
+  margin-bottom: -1rem;
 }
 .image4{
   height: 50%;
@@ -785,7 +788,7 @@ header .mobile {
   background-size: contain;
   background-position: center;
   background-repeat: no-repeat;
-  margin-bottom: -0.5rem;
+  margin-bottom: -1rem;
 }
 .image5{
   height: 50%;
@@ -793,7 +796,7 @@ header .mobile {
   background-size: contain;
   background-position: center;
   background-repeat: no-repeat;
-  margin-bottom: -0.5rem;
+  margin-bottom: -1rem;
 }
 .image6{
   height: 50%;
@@ -801,7 +804,7 @@ header .mobile {
   background-size: contain;
   background-position: center;
   background-repeat: no-repeat;
-  margin-bottom: -0.5rem;
+  margin-bottom: -1rem;
 }
 .image {
 
@@ -817,6 +820,7 @@ header .mobile {
   width: auto;
   background-color: white;
   margin-top: -1rem;
+  bottom: 1rem;
 }
 .para h3{
   font-size: 1.5rem;
