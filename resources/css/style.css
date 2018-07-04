@@ -9,7 +9,8 @@ html {
 }
 @media only screen and (max-width: 460px){
   html{
-  /*  overflow-x: hidden; ...*/
+/*..   overflow-x: hidden;*/
+
   }
 }
 
@@ -293,6 +294,7 @@ header .mobile {
   .bannermobile {
     display: block;
     position: relative;
+    width: 100%;
     flex-direction: column;
     top: 4rem;
     background-color: lightgrey;
@@ -322,43 +324,52 @@ header .mobile {
 }
 .mobilewords .mobH1 {
     width: 100%;
-    font-size: 3rem;
+    font-size: 2.5rem;
     font-weight: bold;
-    padding: 2rem 0rem 2rem 1rem;
-    white-space: nowrap;
+    padding: 2rem 1rem 2rem 1rem;
+    padding-right: 2rem;
+    white-space: normal;
+    overflow: hidden;
   }
 
 .mobilewords .mobP {
     display: flex;
     font-size: 1.5rem;
+    text-align: left;
     padding: 0rem  0rem 1.5rem 1.5rem;
+    overflow: hidden;
   }
+.linkmobile{
+  text-align: center;
+  padding-bottom: 2rem;
+  padding-top: 2rem;
+}
+.linkmobile ul{
+  width: 100%;
+}
+.linkmobile li{
+  margin: 1rem;
+  list-style: none;
 
-  .bannermobile .mobSpan {
-    display: flex;
-    font-size: 1.5rem;
-    padding: 0rem 0rem 2rem 0rem;
-    margin-bottom: 1.5rem;
-  }
+}
+.linkmobile a{
+  font-size: 1.2rem;
+  white-space: nowrap;
+  background-color: grey;
+  color: white;
+  text-decoration: none;
+  border: 1px solid grey;
+  padding-top: 5%;
+  padding-bottom: 5%;
+  padding-left: 35%;
+  padding-right: 35%;
+}
 
-  .bannermobile a  {
-    font-size: 1.3rem;
-    text-align: center;
-    border: 1px solid grey;
-    background-color: grey;
-    padding: 1rem 10rem 1rem 10rem;
-    margin-left: .5rem;
-    text-decoration: none;
-    color: white;
-    margin-top: 2rem;
-    align-items: center;
-    margin-left: 1.75rem;
-    margin-right: auto;
-    white-space: nowrap;
-  }
-.bannermobile a:hover {
+.linkmobile a:hover {
   background-color: red;
 }
+
+
 .UppermidContainer{
   display: none;
 }
@@ -465,6 +476,10 @@ header .mobile {
 .videoContainer h1{
   display: none;
 }
+.videoContainer{
+  display: none;
+}
+
 
  /*.....................Uppermid mobile section...........*/
 
@@ -518,7 +533,7 @@ header .mobile {
   display: block;
   position: absolute;
 /*  top: 2200px;*/
-  top: 130rem;
+  top: 120rem;
   margin-top:2rem;
 }
 
