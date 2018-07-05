@@ -18,18 +18,18 @@
           <span><strong>COLMAR</strong>ACADEMY</span>
         <nav class="desktop">
           <ul>
-            <li><a href="#">On campus</a></li>
-            <li><a href="#">Online</a></li>
-            <li><a href="#">or Company</a></li>
+            <li><a href="#camp">On campus</a></li>
+            <li><a href="#online">Online</a></li>
+            <li><a href="#company">or Company</a></li>
             <li><a href="#">Sign in</a></li>
           </ul>
         </nav>
 
        <nav class="mobile">
           <ul>
-            <li><a href="#"><img src="./resources/images/lionLogo.svg" alt="logo"></a></li>
-            <li><a href="#"><img src="./resources/images/babyChair.svg" alt="chair"></a></li>
-            <li><a href="#"><img src="./resources/images/littlePC.svg" alt="little PC"></a></li>
+            <li><a href="#lion"><img src="./resources/images/lionLogo.svg" alt="logo"></a></li>
+            <li><a href="#chair"><img src="./resources/images/babyChair.svg" alt="chair"></a></li>
+            <li><a href="#old"><img src="./resources/images/littlePC.svg" alt="little PC"></a></li>
             <li><a href="#"><img src="./resources/images/littleGuy.svg" alt="little guy"></a></li>
           </ul>
         </nav>
@@ -37,8 +37,7 @@
     </header>
 
 
-
-    <!--mainContent-->
+    <!--banner desktop-->
 
       <div class="banner">
         <div class="girlsContainer">
@@ -60,7 +59,7 @@
         <div  class="imgmobile">
           <img src="./resources/images/bookGirls.jpg" class="mob" alt="bookGirls">
         </div>
-        <div class="mobilewords">                                                        <!--   <span class="mobSpan"><botton onclick="window.location.href='#'"><a href="#">Start here</a></button></span> -->
+        <div class="mobilewords">
           <h1 class="mobH1">Learn something</br>new everyday</h1>
           <p class="mobP">Lorem ipsum dolor sit amet,</br>
              consectetur adipiscing elit.</p>
@@ -74,7 +73,7 @@
 
      <!--Upper mid section-->
 
-     <div class="UppermidContainer">
+     <div id="camp" class="UppermidContainer">
        <div class="Uppermiddesktop">
         <div class="trouble">
           <img><!--<img src="./resources/images/studyGuy.jpg" class="troubleimage"  alt="stugyGuy"/> -->
@@ -127,7 +126,7 @@
 
   <!--Uppermid mobile section-->
 
-   <div class="UppermidMobile">
+   <div id="old" class="UppermidMobile">
      <div class="mobileContainer">
        <div class="imgmob">
          <img src="./resources/images/brickRoadMobile.jpg" alt="brick road">
@@ -163,19 +162,22 @@
 
   <!--Lowermid mobile section-->
 
-  <div class="Lowermid">
+  <div id="chair" class="Lowermid">
       <h1>Start learning</h1>
       <div id="start" class="buttons">
         <ul>
-
           <li><button onclick="window.location.href='#'">Software engineering</button></li>
           <li><button onclick="window.location.href='#'">Computer art</button></li>
           <li><button onclick="window.location.href='#'">Design</button></li>
-          <li><button onclick="window.location.href='#'">Data</button></li>      <!--....................................................-->
+          <li><button onclick="window.location.href='#'">Data</button></li>
           <li><button onclick="window.location.href='#'">Business</button></li>
           <li><button onclick="window.location.href='#'">Marketing</button></li>
         </ul>
      </div>
+
+  <!--video thesis mobile-->
+
+    <div id="lion" class="thesisContainer">
     <div class="thesis">
       <h1>Thesis exhibits</h1>
     </div>
@@ -188,10 +190,11 @@
       <p>&copy; 2016 Colmar Academy, All rights reserved.</p>
     </div>
   </div>
+  </div>
 
   <!--Learning desktop version-->
 
-  <div class="learning">
+  <div id="company" class="learning">
      <div class="color">
      <h1>Start learning</h1>
      <div class="learnContainer">
@@ -266,9 +269,9 @@
       </div>
      </div>
 
-  <!--Video thesis-->
+  <!--Video thesis desktop-->
 
-     <div class="videoContainer">
+     <div id="online" class="videoContainer">
        <h1>Thesis exhibit</h1>
        <div class="vidContainer">
         <div class="video">
@@ -307,6 +310,9 @@
     </div>
       </div>
      </div>
+
+  <!--footer destop-->
+
      <div class="foot">
        <div class="square">
        <div class="reserved">
@@ -317,8 +323,5 @@
       </div>
     </div>
   </div>
-
-
-
   </body>
 </html>
