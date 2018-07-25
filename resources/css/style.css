@@ -648,7 +648,6 @@ header .mobile {
   width: 100%;
   padding-bottom: 1.5rem;
   background-color: lightgrey;
-
 }
 
 .color h1{
@@ -666,24 +665,26 @@ header .mobile {
   flex-wrap: wrap;
   justify-content: center;
   align-items: center;
-  overflow: hidden;
-  max-width: 80rem;
+  overflow-x: hidden;
+  overflow-y: hidden;
 }
-@media only screen and (max-width: 2560px) {
+
+/*.........Alterations to compensate for larger screen size...*/
+@media only screen and (max-width: 4528px) {
   .learnContainer{
     display: flex;
     justify-content: center;
     align-items: center;
     flex-wrap: wrap;
-    width: 80rem;
+    max-width: 80rem;
     height: auto;
     margin-left: auto;
     margin-right: auto;
-    overflow: hidden;
+    overflow-x: hidden;
+    overflow-y: hidden;
     /*...........checking......*/
   }
 }
-
 
 .learnbox{
   display: flex;
