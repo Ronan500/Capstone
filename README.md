@@ -1,4 +1,3 @@
 # Capstone project 
-   Codecademy final project responsive 
-     web page from scratch.
+Project responsive web site using css html 
      
