@@ -1,4 +1,6 @@
-
+@import url('https://fonts.googleapis.com/css?family=Montserrat');
+@import url('https://fonts.googleapis.com/css?family=Raleway');
+@import url('https://fonts.googleapis.com/css?family=Ubuntu');
 /*..................Universal styles.................*/
 html {
   box-sizing: border-box;
@@ -21,6 +23,12 @@ body p {
 body h1, h2, h3{
   font-family: 'Ubuntu', sans-serif;
   font-size: 16px;
+  text-shadow: 3px 3px 3px #aaa;
+}
+body h3{
+  font-family: 'Ubuntu', sans-serif;
+  font-size: 16px;
+  text-shadow: 1px 1px 1px #aaa;
 }
 
 .banner {
@@ -170,6 +178,11 @@ header .mobile {
   height: 45rem;
   padding-bottom: 1rem;
 }
+.anie{
+  animation-delay: .7s;
+  animation-duration: 1.9s;
+  animation-iteration-count: 1;
+}
 
 .girlsContainer{
   width: 60%;
@@ -250,8 +263,8 @@ header .mobile {
   font-weight: bold;
   font-size: 1.3rem;
   text-align: center;
-  border: 1px solid grey;
-  background-color: grey;
+  border: 1px solid #399bd1;
+  background-color: #399bd1;
   padding: 1rem 8rem 1rem 8rem;
   margin-left: 1rem;
   text-decoration: none;
@@ -260,7 +273,7 @@ header .mobile {
 }
 
 .banner a:hover {
-  background-color: red;
+  background-color: grey;
  }
 
  /*...................banner mobile ..............................*/
@@ -342,7 +355,7 @@ header .mobile {
   font-weight: bold;
   font-size: 1.2rem;
   white-space: nowrap;
-  background-color: grey;
+  background-color: #399bd1;
   color: white;
   text-decoration: none;
   border: 1px solid grey;
@@ -353,7 +366,7 @@ header .mobile {
 }
 
 .linkmobile a:hover {
-  background-color: red;
+  background-color: grey;
 }
 
 .UppermidContainer,.Uppermiddesktop,.Uppermiddesktop,
@@ -564,6 +577,7 @@ header .mobile {
   border-left: 1px solid lightgrey;
   padding-bottom: 4rem;
 }
+
 
 .container {
   display: flex;
